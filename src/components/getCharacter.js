@@ -59,9 +59,10 @@ const Character = () => {
                 {charactersArr[1][1].map((character, index) => {
                     return (
                         
-                        <div key={index}>
+                        <div className="container" key={index}>
                             <div className='cardcontent'>
-                            <img src={character.image} alt={character.name} className='img'></img>
+                            
+                            <img src={character.image} alt={character.name} className='image'></img>
                             <div className='character-description'>
                             <dl>
                             <dt>{character.id}</dt>

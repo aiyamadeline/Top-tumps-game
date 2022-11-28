@@ -4,7 +4,7 @@ import Character from './components/getCharacter';
 import Marvelcharacter from './rickandmorty/getcharacters';
 import Card from './components/createCard';
 import './Card.css';
-
+ 
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   
       </header>
       <main>
-        <div>
+        <div className='card'>
         <Card/>
       
       </div>
