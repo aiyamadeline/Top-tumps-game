@@ -1,15 +1,22 @@
 
-.main{
+main{
   display: flex;
+  
 }
 .container{
   display: flex;
+  flex-wrap: wrap;
 }
 .image{
   flex-shrink: 0;
 }
 
+.card {
+  display: flex;
+  flex-direction: row;
+  
 
+}
 .cardcontent{
  
   border: 5px solid black;
@@ -22,8 +29,6 @@
   width: 230px;
  
 }
-  
-
 
 img{
   width: 100%;
@@ -34,7 +39,7 @@ img{
 
 .character-description{
   padding: 1rem;
-  
+
 
 }
 
@@ -58,8 +63,4 @@ img{
   font-weight: normal;
 
 }
-@media only screen and (min-width: 1024px){
-  
-  
-   
-}
+

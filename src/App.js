@@ -1,9 +1,11 @@
 
-import './App.css';
+import './styles/App.css';
 import Character from './components/getCharacter';
 import Marvelcharacter from './rickandmorty/getcharacters';
 import Card from './components/createCard';
-import './Card.css';
+import './styles/Card.css';
+import Navbar from './components/navbar';
+
  
 
 
@@ -11,8 +13,8 @@ function App() {
   return (
     <>
       <header>
-        <h1> Top Trumps </h1>
         
+        <Navbar/>
   
       </header>
       <main>
