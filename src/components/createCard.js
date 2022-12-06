@@ -1,4 +1,4 @@
-import Character from "./getCharacter"
+import Character from "./Fetch/getCharacter1"
 
 
 

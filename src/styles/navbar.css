@@ -107,4 +107,18 @@
     }
 }
 
+@media only screen and (min-width:770) {
+    .nav-menu ul{
+        float: left;
+        background-color: white;
+        border-color: black;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+        display: none;
+        
+    }
+}
+
 /* https://blog.logrocket.com/create-responsive-navbar-react-css/#understanding-the-navigation-layout */

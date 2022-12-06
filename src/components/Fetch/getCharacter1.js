@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-const Character = () => {
+const RickCharacter = () => {
 
     const [characters, setcharacters] = useState(null)
     const [loading, setloading] = useState(true);
@@ -92,4 +92,4 @@ const Character = () => {
 
 }
 
-export default Character;
+export default RickCharacter;

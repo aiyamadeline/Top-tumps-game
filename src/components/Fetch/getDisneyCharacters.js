@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-const Marvelcharacter = () => {
+const DisneyCharacters = () => {
 
     const [characters, setcharacters] = useState(null)
     const [loading, setloading] = useState(true);
@@ -11,7 +11,7 @@ const Marvelcharacter = () => {
     useEffect(() => {
 
     
-    fetch('https://gateway.marvel.com:443/v1/public/characters?orderBy=name&apikey=9d5151e8afe6c079360e4cd9486bf826')
+    fetch("https://swapi.dev/api/people")
         .then(response => {
             if(response.ok) {
                 return response.json()
@@ -33,32 +33,30 @@ const Marvelcharacter = () => {
     if (loading) return "Loading...";
     if (error) return "Error";
 
-    const charactersArr = Object.entries(characters)
-    console.log(charactersArr)
 
-
+     
+console.log(characters)
+// const charactersArr = Object.entries(characters)
+//   console.log(Array.isArray(charactersArr))
+//   console.log(charactersArr)
 
     return (
         <>
-            <div>
-                {charactersArr.map((character, index) => {
+            <section>
+                {characters.results.map((character, index) => {
                     return (
                         <div key={index}>
                             <p>{character.name}</p>
-                            <p>{character.description}</p>
-                            <p>{character.thumbnail.path}</p>
+                            <p>{character.height}</p>
+                            <p>{character.mass}</p>
+                            <p>{character.hair_color}</p>
                         </div>
                     )
-                    
+                })}
 
-                }
-                )}
-                
-           </div>
-    
+            </section>
         </>
     )
-            }       
-            
+}
 
-    export default Marvelcharacter;
+export default DisneyCharacters;
