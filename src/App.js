@@ -14,9 +14,7 @@ function App() {
   return (
     <>
       <header>
-        
-        
-  
+    <Navbar/>
       </header>
       <main>
         {/* <div className='card'>

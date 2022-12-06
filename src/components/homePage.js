@@ -6,9 +6,7 @@ const Homepage = () => {
 
     return (
         <div>
-        <header> 
-            <Navbar/>
-        </header>
+       
         <main>
             <div className="Title">
         Choose your Game
